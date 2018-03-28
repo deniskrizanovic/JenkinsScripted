@@ -1,10 +1,9 @@
 timestamps {
-logstashSend {
-node {
-    stage('Example') {
-            echo 'I only execute on the master branch'
-
+  logstash {
+    node('somelabel') {
+      sh'''
+      echo 'Hello, World!'
+      '''
     }
-} //end node
-}//end logstash
-} //end timestamp
+  }
+}
