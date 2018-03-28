@@ -1,4 +1,4 @@
-timestamp {
+timestamps {
 logstash {
 node {
     stage('Example') {
